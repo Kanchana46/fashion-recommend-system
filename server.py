@@ -55,7 +55,7 @@ def get_similar_designers():
         res = recommender.get_similar_designers(gender, event, dress_type, lat, lng)
         if res != -1:
             response = jsonify(
-                payload=str(res),
+                payload=res,
                 status=200,
                 mimetype='application/json'
             )
