@@ -56,7 +56,7 @@ def get_similar_designers():
         if res != -1:
             response = jsonify(
                 payload=res,
-                status=200,
+                status=201,
                 mimetype='application/json'
             )
         else:
